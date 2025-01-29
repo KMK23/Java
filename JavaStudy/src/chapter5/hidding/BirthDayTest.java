@@ -49,7 +49,7 @@ public class BirthDayTest {
         BirthDay day = new BirthDay();
 
         day.setMonth(2);
-        day.setDay(28);
+        day.setDay(30);
         day.setYear(2025);
     }
 
