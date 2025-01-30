@@ -17,7 +17,6 @@ class Student {
         return name;
     }
 
-    // 반환 타입을 void에서 Student로 변경하여 this 반환 가능
     public Student setName(String name) {
         this.name = name;
         return this; // 메소드 체이닝을 위해 this를 반환
@@ -27,7 +26,6 @@ class Student {
         return grade;
     }
 
-    // 반환 타입을 void에서 Student로 변경하여 this 반환 가능
     public Student setGrade(int grade) {
         this.grade = grade;
         return this; // 메소드 체이닝을 위해 this를 반환
