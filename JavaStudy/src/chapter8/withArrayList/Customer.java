@@ -1,4 +1,4 @@
-package chapter8.inheritancePractice;
+package chapter8.withArrayList;
 
 public class Customer {
     protected int customerID;
@@ -8,24 +8,26 @@ public class Customer {
     double bonusRatio;
 
 //    public Customer(){
-//       customerGrade = "SILVER";
-//       bonusRatio = 0.01;
+//        customerGrade = "SILVER";
+//        bonusRatio = 0.01;
 //    }
-    public Customer(int customerID, String customerName){
 
+    public Customer(int customerID, String customerName) {
         this.customerID = customerID;
         this.customerName = customerName;
         customerGrade = "SILVER";
         bonusRatio = 0.01;
 
-
+//        System.out.println("Customer(int, String) 호출");
     }
+
     public int calcPrice(int price){
         bonusPoint += price * bonusRatio;
         return price;
     }
+
     public String showCustomerInfo(){
-        return customerName + "님의 등급은" + customerGrade + "이며, 보너스 포인트는" + bonusPoint + "점 입니다.";
+        return customerName + " 님의 등급은 " + customerGrade + "이며, 보너스 포인트는 " + bonusPoint + "입니다.";
     }
 
     public int getCustomerID() {

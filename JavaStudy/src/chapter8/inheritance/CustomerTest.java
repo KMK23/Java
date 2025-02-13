@@ -16,5 +16,6 @@ public class CustomerTest {
 
 //        하위 클래스가 생성 되면 상위 클래스부터 생성된다.
         System.out.println(customerKim.showCustomerInfo());
+
     }
 }
