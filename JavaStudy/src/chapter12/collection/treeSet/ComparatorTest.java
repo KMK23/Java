@@ -3,10 +3,10 @@ package chapter12.collection.treeSet;
 import java.util.Comparator;
 import java.util.TreeSet;
 
-class MyComapre implements Comparator<String>{
+class MyCompare implements Comparator<String> {
     @Override
     public int compare(String str1, String str2) {
-        return str1.compareTo(str2)*(-1);
+        return str1.compareTo(str2) * (-1);
     }
 }
 
@@ -14,12 +14,13 @@ class MyComapre implements Comparator<String>{
 public class ComparatorTest {
     public static void main(String[] args) {
 
-        TreeSet<String> tree = new TreeSet();
-        tree.add("ccc");
-        tree.add("aaa");
-        tree.add("eee");
+        TreeSet<String> treeSet = new TreeSet<>(new MyCompare());
 
-        System.out.println(tree);
+        treeSet.add("aaa");
+        treeSet.add("bbb");
+        treeSet.add("ccc");
+
+        System.out.println(treeSet);
 
     }
 }

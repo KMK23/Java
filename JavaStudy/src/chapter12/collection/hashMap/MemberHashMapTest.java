@@ -1,25 +1,21 @@
 package chapter12.collection.hashMap;
 
 import chapter12.collection.Member;
-import chapter12.collection.treeSet.MemberTreeSet;
 
 public class MemberHashMapTest {
     public static void main(String[] args) {
         MemberHashMap memberHashMap = new MemberHashMap();
 
-        Member memberLee = new Member(101, "이순신");
-        Member memberKim = new Member(102, "김유신");
-        Member memberShin = new Member(103, "신사임당");
-
+        Member memberLee = new Member(1001, "이순신");
+        Member memberKim = new Member(1002, "김유신");
+        Member memberShin = new Member(1003, "신사임당");
 
         memberHashMap.addMember(memberLee);
         memberHashMap.addMember(memberKim);
         memberHashMap.addMember(memberShin);
+        memberHashMap.showAll();
 
-        memberHashMap.showAllMember();
-
-        System.out.println();
-        memberHashMap.removeMember(102);
-        memberHashMap.showAllMember();
+        memberHashMap.removeMember(1001);
+        memberHashMap.showAll();
     }
 }
